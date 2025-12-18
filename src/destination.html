@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Travel Planner</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination - Smart Travel Planner</title>
     <link rel="stylesheet" href="./output.css" />
     <link
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ku_JAxG2yYPtQ1m3e0XNY3vaw5bL8IhHBg&s"
     />
-  </head>
-  <body class="bg-linear-to-br from-sky-100 to-sky-300 min-h-screen">
+</head>
+<body class="bg-gray-200 min-h-screen">
     <!-- Navbar -->
     <nav class="bg-white shadow-md">
       <div class="max-w-6xl mx-auto px-4">
@@ -38,27 +38,17 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="flex items-center justify-center mt-20">
-      <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
-        <h1 class="text-2xl font-bold text-center mb-6 text-sky-500">
-          Smart Travel Planner
-        </h1>
-        <input
-          type="text"
-          id="cityInput"
-          placeholder="Enter City Or Country"
-          class="w-full border p-3 rounded mb-4"
-        />
 
-        <button
-          id="searchBtn"
-          class="w-full bg-sky-600 text-white py-3 hover:bg-sky-700 rounded transition"
-        >
-          Plan My Trip
-        </button>
+    <div class="flex flex-col items-center justify-center mt-20">
+                <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+                    <h1 class="text-2xl font-bold text-center mb-6 text-sky-500">
+                        City Overview
+                    </h1>
+                    <p class="text-grey-700 ">You Searched For :</p>
+                    <h2 id="cityName" class="text-xl font-extrabold text-sky-600 text-center"></h2> 
       </div>
-    </div>
-
-    <script src="./JS/main.js"></script>
-  </body>
+        </div>
+    
+<script src="./JS/destination.js"></script>
+</body>
 </html>
